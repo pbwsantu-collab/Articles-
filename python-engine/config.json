@@ -1,0 +1,23 @@
+{
+  "project_name": "BB STORE – ENGLISH PWA",
+  "version": "1.0.0",
+  "input_dir": "input",
+  "output_dir": "output",
+  "docs_data_dir": "../docs/data",
+  "chapters": [
+    {
+      "id": "chapter-x",
+      "title": "Determiners, Articles",
+      "number": "X",
+      "slug": "determiners-articles",
+      "source_file": "chapter_x.txt"
+    }
+  ],
+  "settings": {
+    "generate_bengali": true,
+    "generate_narration": true,
+    "generate_questions": true,
+    "validate_questions": true,
+    "max_questions": 100
+  }
+}

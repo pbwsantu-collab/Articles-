@@ -1,0 +1,16 @@
+{
+  "chapter": "X",
+  "title": "Exercise 11",
+  "parts": {
+    "a": {
+      "instruction": "Put \u2018a\u2019 or \u2018an\u2019 before the following words.",
+      "items": ["dog", "hour", "hair", "day", "heir", "hundred", "university",
+                "honour", "European", "umbrella", "ox", "B.A.", "M.A.", "D.Sc."]
+    },
+    "b": {"instruction": "Fill in the blanks with proper articles.", "note": "See textbook for full list"},
+    "c": {"instruction": "Fill in the blanks with proper articles in the passages."},
+    "d": {"instruction": "Insert the missing articles."},
+    "e": {"instruction": "Insert \u2018a\u2019, \u2018an\u2019 or \u2018the\u2019 where necessary."},
+    "f": {"instruction": "Correct the following sentences."}
+  }
+}
