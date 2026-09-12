@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#1e40af" />
-  <meta name="description" content="BB STORE – English Grammar PWA. Learn Determiners & Articles interactively." />
+  <meta name="description" content="BB STORE – English Grammar PWA. Learn Determiners & Articles interactively with Bengali support." />
   <link rel="manifest" href="manifest.json" />
   <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
   <title>BB STORE – ENGLISH PWA</title>
@@ -25,11 +25,11 @@
           <p>Interactive lessons • Practice • 100-Question Tests • Bengali support</p>
         </div>
         <nav class="main-nav">
-          <button class="nav-btn" data-view="grammar">📚 Grammar</button>
+          <button class="nav-btn" data-view="learn">🎓 Teach Mode</button>
           <button class="nav-btn" data-view="practice">📝 Practice</button>
           <button class="nav-btn" data-view="test">🎯 100 Test</button>
-          <button class="nav-btn" data-view="learn">🎓 Teach Mode</button>
-          <button class="nav-btn" data-view="worksheets">📄 Worksheets</button>
+          <button class="nav-btn" data-view="contrasts">⚡ Contrasts</button>
+          <button class="nav-btn" data-view="checklist">✅ Checklist</button>
           <button class="nav-btn" data-view="results">📊 Results</button>
         </nav>
         <div class="chapter-card" id="chapter-card">
@@ -52,15 +52,15 @@
         <button class="action-btn" data-view="rules">📖 RULES</button>
         <button class="action-btn" data-view="practice">📝 PRACTICE</button>
         <button class="action-btn" data-view="test">🎯 100 TEST</button>
+        <button class="action-btn" data-view="contrasts">⚡ CONTRASTS</button>
         <button class="action-btn" data-view="results">📊 RESULT</button>
-        <button class="action-btn" onclick="window.print()">🖨️ PRINT</button>
       </div>
       <div id="rules-list" class="rules-list"></div>
     </section>
 
     <section id="view-learn" class="view">
       <header class="view-header">
-        <button class="back-btn" data-view="chapter">←</button>
+        <button class="back-btn" data-view="home">←</button>
         <h1>Teach Mode</h1>
         <div class="voice-controls">
           <button id="btn-play" title="Play">▶</button>
@@ -69,9 +69,7 @@
         </div>
       </header>
       <div id="teach-screen" class="teach-screen">
-        <div class="teach-card" id="teach-card">
-          <div class="teach-step" id="teach-step">Loading…</div>
-        </div>
+        <div class="teach-card" id="teach-card"><div class="teach-step">Loading…</div></div>
         <div class="teach-nav">
           <button id="teach-prev" class="secondary-btn">Previous</button>
           <span id="teach-counter">1 / 1</span>
@@ -88,11 +86,28 @@
       <div id="all-rules" class="rules-detail"></div>
     </section>
 
+    <section id="view-contrasts" class="view">
+      <header class="view-header">
+        <button class="back-btn" data-view="home">←</button>
+        <h1>Must-Know Contrasts</h1>
+      </header>
+      <div id="contrasts-content" class="contrasts-content"></div>
+    </section>
+
+    <section id="view-checklist" class="view">
+      <header class="view-header">
+        <button class="back-btn" data-view="home">←</button>
+        <h1>Exam Checklist</h1>
+      </header>
+      <div id="checklist-content" class="checklist-content"></div>
+    </section>
+
     <section id="view-practice" class="view">
       <header class="view-header">
-        <button class="back-btn" data-view="chapter">←</button>
+        <button class="back-btn" data-view="home">←</button>
         <h1>Practice</h1>
       </header>
+      <div id="practice-filters" class="filter-bar"></div>
       <div id="practice-area" class="practice-area">
         <div class="q-card" id="practice-card">
           <div class="q-meta" id="pq-meta"></div>
@@ -109,12 +124,13 @@
 
     <section id="view-test" class="view">
       <header class="view-header">
-        <button class="back-btn" data-view="chapter">←</button>
+        <button class="back-btn" data-view="home">←</button>
         <h1>100-Question Test</h1>
       </header>
       <div id="test-intro" class="test-intro">
-        <p>Exactly 100 questions covering all rules of Determiners & Articles.</p>
-        <p>Difficulty mix: Easy • Medium • Difficult</p>
+        <p><strong>Exactly 100 questions</strong> covering every rule of Determiners & Articles.</p>
+        <p>Topics: A/An by sound · The · Omission · Repetition · Error correction</p>
+        <p>Difficulty: Easy · Medium · Difficult</p>
         <button id="start-test" class="primary-btn">Start Test</button>
       </div>
       <div id="test-area" class="practice-area" hidden>
@@ -158,7 +174,6 @@
       <div id="print-area" class="print-area"></div>
     </section>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
