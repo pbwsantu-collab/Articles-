@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Output artefacts that are regenerated
+python-engine/output/*
+!python-engine/output/.gitkeep
+
+# Local secrets
+*.key
+secrets.json
